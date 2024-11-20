@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>position page 2</title>
+    <style>
+        .main{
+            width: 1000px;
+            height: 700px;
+            margin: auto;
+            background-color: yellow;
+            position: relative;
+            border: 2px red solid;
+        }
+        .box{
+        width: 100px;
+         height: 100px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        transition: 500ms;
+        background-color: red;
+        border-radius: 50%;
+        }
+        .box1{
+        top: 0px;
+        left: 0px;
+    }
+    .box2{
+        top: 0px;
+        right: 0px;
+
+    }
+    .box3{
+        bottom: 0px;
+        right: 0px;
+    }
+    .box4{
+        bottom: 0px;
+        left: 0px;
+    }
+    .main:hover .box1{
+        top: 300px;
+        left: 450px;
+    }
+    .main:hover .box2{
+        top: 300px;
+        right: 450px;
+    }
+    .main:hover .box3{
+        bottom: 300px;
+        right: 450px;
+    }
+    .main:hover .box4{
+        bottom: 300px;
+        left: 450px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+    <div class=" box box1">1</div>
+    <div class=" box box2">2</div>
+    <div class=" box box3">3</div>
+    <div class=" box box4">4</div>
+</div>
+
+</body>
+</html>
